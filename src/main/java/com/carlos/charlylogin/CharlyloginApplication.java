@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @SpringBootApplication
-@RestController
 public class CharlyloginApplication extends SpringBootServletInitializer {
 
 	private static final Logger log = LoggerFactory.getLogger(CharlyloginApplication.class);
