@@ -1,0 +1,25 @@
+<div *ngIf="contact">
+    <div>
+        <label>Name: </label> {{contact.name}}
+    </div>
+    <div>
+        <label>Age: </label> {{contact.age}}
+    </div>
+    <div>
+        <label>Nickname: </label> {{contact.nickName}}
+    </div>
+    <div>
+        <label>Phones: </label> {{contact.phones}}
+    </div>
+    <div>
+        <label>Active: </label> {{contact.active}}
+    </div>
+
+    <span class="button is-small btn-primary" *ngIf='contact.active' (click)='updateActive(false)'>Inactive</span>
+
+    <span class="button is-small btn-primary" *ngIf='!contact.active' (click)='updateActive(true)'>Active</span>
+
+    <span class="button is-small btn-danger" (click)='deleteContact()'>Delete</span>
+
+    <hr/>
+</div>
